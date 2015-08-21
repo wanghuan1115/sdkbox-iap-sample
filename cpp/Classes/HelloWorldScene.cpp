@@ -59,12 +59,6 @@ bool HelloWorld::init()
     
     _iapMenu = rootNode->getChildByName<ui::Widget*>("menuIAP");
     
-    Product test;
-    test.name = "remove_ads";
-    
-    _products.push_back(test);
-    updateIAP(_products);
-    
     return true;
 }
 
@@ -163,13 +157,15 @@ void HelloWorld::updateIAP(const std::vector<sdkbox::Product>& products)
         CCLOG("IAP: Price Value: %f", _products[i].priceValue);
         
         auto btn = ui::Button::create("button.png");
-        //        btn->setTitleText(_products[i].name);
+        btn->setTitleText(_products[i].name);
+        btn->setTitleFontSize(36);
+        btn->setScale9Enabled(true);
+        btn->setContentSize(Size(250,100));
         btn->addClickEventListener(CC_CALLBACK_1(HelloWorld::onIAP, this));
         btn->setColor(Color3B::WHITE);
         btn->setUserData(&_products[i]);
         btn->setPosition(Vec2(posX, posY));
         _iapMenu->addChild(btn);
-        posY += 50;
     }
 }
 
