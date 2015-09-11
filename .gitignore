@@ -1,6 +1,12 @@
 *.zip
 
 # Android
+gdb.setup
+gdbserver
+libcocos2dcpp.so
+libcocos2djs.so
+proguard-project.txt
+**/app/build.xml
 *.apk
 bin/
 obj/
