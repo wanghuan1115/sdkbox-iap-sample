@@ -41,6 +41,9 @@ namespace sdkbox
 
         // Localized price
         std::string price;
+        
+        // price currency code
+        std::string currencyCode;
     };
 
     /**
@@ -84,6 +87,11 @@ namespace sdkbox
         * Called when the product request fails
         */
         virtual void onProductRequestFailure(const std::string& msg) = 0;
+        
+        /**
+         * Called when the restore completed
+         */
+        virtual void onRestoreComplete(bool ok, const std::string &msg) = 0;
     };
 
     class IAP

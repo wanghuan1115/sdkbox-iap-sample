@@ -6,7 +6,7 @@ LOCAL_MODULE := cocos2djs_shared
 
 LOCAL_MODULE_FILENAME := libcocos2djs
 
-LOCAL_SRC_FILES := hellojavascript/main.cpp ../../Classes/AppDelegate.cpp ../../Classes/PluginIAPJS.cpp ../../Classes/PluginIAPJsHelper.cpp ../../Classes/SDKBoxJSHelper.cpp
+LOCAL_SRC_FILES := hellojavascript/main.cpp ../../Classes/AppDelegate.cpp ../../Classes/PluginIAPJS.cpp ../../Classes/PluginIAPJSHelper.cpp ../../Classes/SDKBoxJSHelper.cpp
 
 LOCAL_LDLIBS := -landroid -llog
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes

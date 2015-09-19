@@ -1,4 +1,4 @@
-#include "PluginIAPJSHelper.hpp"
+#include "PluginIAPJSHelper.h"
 #include "cocos2d_specifics.hpp"
 #include "PluginIAP/PluginIAP.h"
 
@@ -84,14 +84,15 @@ jsval std_vector_product_to_jsval( JSContext *cx, const std::vector<sdkbox::Prod
 #endif
 
     int i = 0;
-    for (const sdkbox::Product obj : v)
+    std::vector<sdkbox::Product>::const_iterator it = v.begin();
+    for (; it != v.end(); it++)
     {
 #if defined(MOZJS_MAJOR_VERSION)
         JS::RootedValue arrElement(cx);
 #elif defined(JS_VERSION)
         jsval arrElement;
 #endif
-        arrElement = OBJECT_TO_JSVAL(product_to_obj(s_cx, obj));
+        arrElement = OBJECT_TO_JSVAL(product_to_obj(s_cx, (*it)));
 
 #if MOZJS_MAJOR_VERSION >= 31
         if (!JS_SetElement(cx, jsretArr, i, arrElement)) {
