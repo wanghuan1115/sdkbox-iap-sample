@@ -3,7 +3,7 @@
         "engine": "3", 
         "constants": {
             "ANDROID_STUDIO_JNI_DIR": "/Users/niteluo/Projects/test/cocos/sdkbox-iap-sample/js/frameworks/runtime-src/proj.android-studio/app/jni/", 
-            "COCOS_BACKUP_DIR": "/Users/niteluo/Projects/test/cocos/sdkbox-iap-sample/js/backup-2015-09-18/", 
+            "COCOS_BACKUP_DIR": "/Users/niteluo/Projects/test/cocos/sdkbox-iap-sample/js/backup-2015-09-25/", 
             "COCOS_PROJECT_DIR": "/Users/niteluo/Projects/test/cocos/sdkbox-iap-sample/js/", 
             "android_js_sources": [
                 "../../Classes/PluginIAPJS.cpp", 
@@ -42,7 +42,6 @@
             "COCOS_2DX_VERSION": "3.7.0", 
             "ANDROID_PROPERTIES": "/Users/niteluo/Projects/test/cocos/sdkbox-iap-sample/js/frameworks/runtime-src/proj.android/project.properties", 
             "ANDROID_ACTIVITY_PATH": "/Users/niteluo/Projects/test/cocos/sdkbox-iap-sample/js/frameworks/runtime-src/proj.android/src/org/cocos2dx/javascript/", 
-            "SDKBOX_PACKAGE_NAME": "iap", 
             "COCOS_RESOURCES_DIR": "/Users/niteluo/Projects/test/cocos/sdkbox-iap-sample/js/res/", 
             "ANDROID_STUDIO_LIBS_DIR": "/Users/niteluo/Projects/test/cocos/sdkbox-iap-sample/js/frameworks/cocos2d-x/cocos/platform/android/libcocos2dx/libs/", 
             "ANDROID_LIBS_DIR": "/Users/niteluo/Projects/test/cocos/sdkbox-iap-sample/js/frameworks/cocos2d-x/cocos/platform/android/java/libs/", 
@@ -50,24 +49,25 @@
         }, 
         "version": [
             1, 
-            2, 
-            5, 
-            0
+            3, 
+            0, 
+            14
         ], 
         "name": "iap", 
         "args": {
-            "leavetemps": 0, 
+            "patcherrors": 0, 
             "project": "/Users/niteluo/Projects/test/cocos/sdkbox-iap-sample/js", 
             "nohelp": 0, 
+            "staging": 1, 
             "verbose": 0, 
             "noupdate": 0, 
+            "command": "update", 
             "days": 10, 
-            "forcedownload": 0, 
-            "command": "import", 
             "manifest": "manifest.json", 
-            "installer": "sdkbox.py", 
+            "forcedownload": 0, 
             "china": 0, 
-            "server": "download.sdkbox.com/installer/v1/"
+            "installer": "sdkbox.pyc", 
+            "server": "staging.sdkbox.com/installer/v1/"
         }
     }
 }
