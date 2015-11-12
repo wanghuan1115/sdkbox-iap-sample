@@ -3,6 +3,7 @@
 
 #include "cocos2d.h"
 #include "PluginIAP/PluginIAP.h"
+#include "ui/CocosGUI.h"
 
 class HelloWorld : public cocos2d::Layer, public sdkbox::IAPListener
 {
@@ -44,7 +45,7 @@ private:
     
     cocos2d::ui::Widget* _iapMenu;
     std::vector<sdkbox::Product> _products;
-    cocos2d::Label* _txtCoin;
+    cocos2d::ui::Text* _txtCoin;
     int _coinCount;
 };
 

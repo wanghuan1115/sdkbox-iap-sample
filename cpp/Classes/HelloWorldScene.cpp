@@ -46,7 +46,7 @@ bool HelloWorld::init()
     
     addChild(rootNode);
     
-    _txtCoin = rootNode->getChildByName<Label*>("txtCoin");
+    _txtCoin = rootNode->getChildByName<ui::Text*>("txtCoin");
     
     auto btnLoad = rootNode->getChildByName<ui::Button*>("btnLoad");
     btnLoad->addClickEventListener(CC_CALLBACK_1(HelloWorld::onRequestIAP, this));
