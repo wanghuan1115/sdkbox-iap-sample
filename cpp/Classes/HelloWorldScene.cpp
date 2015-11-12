@@ -108,15 +108,17 @@ void HelloWorld::onInitialized(bool ok)
 void HelloWorld::onSuccess(const Product &p)
 {
     if (p.name == "coin_package") {
+        CCLOG("Purchase complete: coin_package");
         _coinCount += 1000;
         _txtCoin->setString(tostr(_coinCount));
     }
     else if (p.name == "coin_package2") {
+        CCLOG("Purchase complete: coin_package2");
         _coinCount += 5000;
         _txtCoin->setString(tostr(_coinCount));
     }
     else if (p.name == "remove_ads") {
-        CCLOG("Remove Ads");
+        CCLOG("Purchase complete: Remove Ads");
     }
     
     CCLOG("Purchase Success: %s", p.id.c_str());
