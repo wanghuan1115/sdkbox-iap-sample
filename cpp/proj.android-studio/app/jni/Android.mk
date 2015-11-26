@@ -11,10 +11,9 @@ LOCAL_MODULE := cocos2dcpp_shared
 
 LOCAL_MODULE_FILENAME := libcocos2dcpp
 
-LOCAL_SRC_FILES := hellocpp/main.cpp \
-                   ../../../Classes/AppDelegate.cpp \
-                   ../../../Classes/HelloWorldScene.cpp
+LOCAL_SRC_FILES := hellocpp/main.cpp ../../../Classes/AppDelegate.cpp ../../../Classes/HelloWorldScene.cpp
 
+LOCAL_CPPFLAGS := -DSDKBOX_ENABLED
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../Classes
 
 # _COCOS_HEADER_ANDROID_BEGIN
