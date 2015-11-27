@@ -9,6 +9,7 @@ LOCAL_MODULE_FILENAME := libcocos2djs
 LOCAL_SRC_FILES := hellojavascript/main.cpp ../../Classes/AppDelegate.cpp ../../Classes/PluginIAPJS.cpp ../../Classes/PluginIAPJSHelper.cpp ../../Classes/SDKBoxJSHelper.cpp
 
 LOCAL_LDLIBS := -landroid -llog
+LOCAL_CPPFLAGS := -DSDKBOX_ENABLED
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 LOCAL_WHOLE_STATIC_LIBRARIES := PluginIAP sdkbox android_native_app_glue
 

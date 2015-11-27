@@ -530,6 +530,9 @@
 					"\"sdkbox.framework\"",
 					"\"PluginIAP.framework\"",
 				);
+				OTHER_CFLAGS = (
+					-DSDKBOX_ENABLED,
+				);
 				OTHER_LDFLAGS = (
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
@@ -570,6 +573,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"\"sdkbox.framework\"",
 					"\"PluginIAP.framework\"",
+				);
+				OTHER_CFLAGS = (
+					-DSDKBOX_ENABLED,
 				);
 				OTHER_LDFLAGS = (
 					"$(_COCOS_LIB_IOS_BEGIN)",

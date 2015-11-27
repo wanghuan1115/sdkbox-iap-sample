@@ -8,6 +8,7 @@ LOCAL_MODULE_FILENAME := libcocos2djs
 
 LOCAL_SRC_FILES := hellojavascript/main.cpp ../../../Classes/AppDelegate.cpp ../../../Classes/PluginIAPJS.cpp ../../../Classes/SDKBoxJSHelper.cpp ../../../Classes/PluginIAPJSHelper.cpp
 
+LOCAL_CPPFLAGS := -DSDKBOX_ENABLED
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../Classes
 
 LOCAL_STATIC_LIBRARIES := cocos2d_js_static
